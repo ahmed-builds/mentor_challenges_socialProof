@@ -1,0 +1,108 @@
+:root {
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  font-family: "League Spartan";
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+}
+.container {
+  width: 70vw;
+}
+.top {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding: 2rem 0rem;
+}
+.row > .top-col-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+.col-title {
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: var(--VeryDarkMagenta);
+  margin-bottom: 1rem;
+}
+.col-desc {
+    color: var(--DarkGrayishMagenta);
+    line-height: 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.starsRow {
+    background-color: var(--LightGrayishMagenta);
+    width: 450px;
+    padding: 1.2rem 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+}
+.starsText {
+    font-weight: 700;
+    color: var(--VeryDarkMagenta);
+}
+.row-stars-2 {
+    margin-left: 3.5rem;
+}
+.row-stars-3 {
+    margin-left: 7rem;
+}
+.bottom {
+    display: flex;
+    gap: 25px;
+    padding: 2rem 0rem;
+}
+.col-box {
+    background-color: var(--VeryDarkMagenta);
+    color: var(--White);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    min-height: 250px;
+}
+.col-box-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.col-box-profile > .profile-img > img {
+    border-radius: 50%;
+    width: 40px;
+}
+.col-box-profile {
+    padding-bottom: 1.5rem;
+}
+.profile-name {
+    font-weight: 700;
+    padding: 0.1rem 0rem;
+}
+.profile-verif {
+    color: var(--SoftPink);
+    padding: 0.1rem 0rem;
+}
+.box-quote {
+    line-height: 1.5rem;
+}
+.bot-col-2 {
+    margin-top: 1rem;
+}
+.bot-col-3 {
+    margin-top: 2rem;
+}
